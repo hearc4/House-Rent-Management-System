@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #B0E0E6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.HomeController">
+   <children>
+      <Pane layoutX="109.0" layoutY="36.0" prefHeight="516.0" prefWidth="253.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="41.0" prefHeight="118.0" prefWidth="253.0" style="-fx-background-radius: 20; -fx-background-color: #A0522D;" text="Luxury Place To Stay">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="406.0" fitWidth="190.0" layoutX="33.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/8.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="487.0" layoutY="25.0" prefHeight="503.0" prefWidth="273.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="41.0" prefHeight="118.0" prefWidth="273.0" style="-fx-background-radius: 20; -fx-background-color: #A0522D;" text="Single Bed Room">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="224.0" fitWidth="273.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/exclusive1%20(1).jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="846.0" layoutY="36.0" prefHeight="516.0" prefWidth="261.0" style="-fx-background-radius: 20; -fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="41.0" prefHeight="118.0" prefWidth="253.0" style="-fx-background-radius: 20; -fx-background-color: #A0522D;" text="Double Bed Room">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="334.0" fitWidth="227.0" layoutX="14.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/bedroom-ideas-hbx060122reganbaker-001-1656004255.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="578.0" prefHeight="128.0" prefWidth="1209.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <ImageView fitHeight="63.0" fitWidth="50.0" layoutX="109.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/images.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="203.0" layoutY="55.0" prefHeight="35.0" prefWidth="161.0" text="01785809356">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="50.0" layoutX="445.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/Yahoo-icon-design-on-transparent-background-PNG.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="518.0" layoutY="55.0" prefHeight="35.0" prefWidth="273.0" text="houserent@yahoo.com">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="63.0" fitWidth="50.0" layoutX="827.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/sm_5afb0cf7bd445.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="903.0" layoutY="55.0" prefHeight="35.0" prefWidth="273.0" text="Uttara Sector 10">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

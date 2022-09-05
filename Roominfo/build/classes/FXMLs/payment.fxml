@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="750.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PaymentController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="447.0" layoutY="14.0" prefHeight="67.0" prefWidth="275.0" text="Payment">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Pane layoutX="51.0" layoutY="212.0" prefHeight="115.0" prefWidth="331.0" style="-fx-background-color: #DFD7D7;">
+         <children>
+            <Label fx:id="tamount" alignment="CENTER" layoutX="74.0" layoutY="23.0" prefHeight="35.0" prefWidth="206.0" text="Total Ammount:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="payAmmount" alignment="CENTER" layoutX="84.0" layoutY="58.0" prefHeight="35.0" prefWidth="186.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="paymentTableView" layoutX="632.0" layoutY="327.0" prefHeight="247.0" prefWidth="554.0">
+        <columns>
+          <TableColumn fx:id="readbookId" minWidth="30.0" prefWidth="120.9999656677246" text="Booking ID" />
+            <TableColumn fx:id="readbookDate" prefWidth="184.79998779296875" text="Booking Date" />
+            <TableColumn fx:id="Booking_name" prefWidth="120.00006103515625" text="Name" />
+          <TableColumn fx:id="readTenantId" prefWidth="120.99998474121094" text="Tenant ID" />
+        </columns>
+      </TableView>
+      <Button fx:id="search_pay" layoutX="752.0" layoutY="618.0" mnemonicParsing="false" onAction="#payBtn" prefHeight="26.0" prefWidth="84.0" text="Select" />
+      <TextField fx:id="searchText" layoutX="794.0" layoutY="223.0" prefHeight="35.0" prefWidth="282.0" promptText="Search with Tenant name" />
+      <Button fx:id="searchbtn" layoutX="1094.0" layoutY="225.0" mnemonicParsing="false" onAction="#clickSearch" text="search" />
+      <Button fx:id="confirm_btn" layoutX="1023.0" layoutY="618.0" mnemonicParsing="false" onAction="#pay_confirm" prefHeight="26.0" prefWidth="122.0" text="Confirm" />
+      <JFXComboBox fx:id="Advance_Pay" layoutX="64.0" layoutY="375.0" onAction="#BookingAdvance" prefHeight="67.0" prefWidth="319.0" promptText="Advance For Booking" />
+      <JFXComboBox fx:id="payment_Type" layoutX="74.0" layoutY="499.0" onAction="#payMethod" prefHeight="54.0" prefWidth="309.0" promptText="Paymnet Type" />
+      <Pane layoutX="63.0" layoutY="610.0" prefHeight="115.0" prefWidth="331.0" style="-fx-background-color: #DFD7D7;">
+         <children>
+            <Label fx:id="tamount1" alignment="CENTER" layoutX="74.0" layoutY="23.0" prefHeight="35.0" prefWidth="206.0" text="Due Ammount:">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="DueAmmount" alignment="CENTER" layoutX="84.0" layoutY="58.0" prefHeight="35.0" prefWidth="186.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="855.0" layoutY="671.0" mnemonicParsing="false" onAction="#logOutbtn" prefHeight="54.0" prefWidth="146.0" text="Log Out" />
+   </children>
+</AnchorPane>
